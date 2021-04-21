@@ -8,28 +8,16 @@ class migrar extends Module
 {
     public function __construct()
     {
-        $this->name = 'Migrar';
+        $this->name = 'migrar';
         $this->tab = 'front_office_features';
         $this->version = '0.0.1';
         $this->author ='JosAlba';
         $this->need_instance = 0;
         //Da el aspecto de bootstrap.
-        $this->bootstrap = true;
+        //$this->bootstrap = true;
         $this->ps_versions_compliancy = array(
             'min' => '1.6.0.0', 'max' => _PS_VERSION_
         );
-
-        //Añadimos los parametros para el modulo.
-        $buffero = array(
-            'MIGRAR_ACTIVE'
-        );
-
-        $tiendas = $this->getSites();
-        for ($i=0;$i<count($tiendas);$i++) {
-            $buffero['MIGRAR_ACTIVE_'.$tiendas[$i]['shop_id']] = '';
-        }
-
-        $config = Configuration::getMultiple($buffero);
 
         parent::__construct();
 
