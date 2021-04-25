@@ -76,18 +76,4 @@ class migrar extends Module
         return true;
     }
 
-    public function getContent(){
-
-        $endpoint = Context::getContext()->shop->getBaseURL(true);
-        $endpoint = $endpoint.'modules/migrar/export.php';
-
-        $this->smarty->assign(array(
-            'Endpoint' => $endpoint,
-        ));
-
-        $html = $this->display(__file__, 'views/templates/admin/html.tpl');
-
-        return $html;
-
-    }
 }
