@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+ <name>migrar</name>
+ <displayName>
+ <![CDATA[migrar]]>
+ </displayName>
+ <version>
+ <![CDATA[0.0.1]]>
+ </version>
+ <description>
+ <![CDATA[Migrar datos 1.6.x.x]]>
+ </description>
+ <author>
+ <![CDATA[JosAlba]]>
+ </author>
+ <tab>
+ <![CDATA[front_office_features]]>
+ </tab>
+ <confirmUninstall>
+ <![CDATA[¿You want to uninstall?]]>
+ </confirmUninstall>
+ <is_configurable>1</is_configurable>
+ <need_instance>0</need_instance>
+ <limited_countries></limited_countries>
+</module>
